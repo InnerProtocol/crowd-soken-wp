@@ -1,0 +1,265 @@
+/*
+Theme Name: Crowd-soken 
+Theme URI: 
+Author: nigorinuma hiroki
+Author URI: http://nigohiroki.hatenablog.com/
+Description: クラウド総研のテーマ
+Version: 0.2
+Text Domain: Crowd-soken
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul,li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: #666;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+.clearfix{
+  *zoom: 1;
+}
+
+/* header */
+header{
+  height: auto;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #62b62f;
+}
+header #header_in{
+  width: 960px;
+  margin: auto;
+}
+header h1{
+}
+header a.title{
+  color: #000;
+}
+
+header h2{
+  float: left;
+  font-size: 18px;
+  width: 40%;
+}
+header ul{
+  float: right;
+  width: 60%;
+}
+header li{
+  float: left;
+  box-sizing: border-box;
+  font-size: 12px;
+  width: 25%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  border-left: 1px solid #62b62f;
+}
+header li.last{
+  border-right: 1px solid #62b62f;
+}
+header li:hover{
+  color: #fff;
+  background-color: #62b62f;
+}
+
+/* main */
+#main{
+  width: 960px;
+  min-height: 600px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* section */
+#main section {
+  float: left;
+  box-sizing: border-box;
+  width: 700px;
+}
+
+#main section .post{
+  box-sizing: border-box;
+  width: 95%;
+  height: 200px;
+  border: 1px solid #999;
+  margin-bottom: 30px;
+}
+#main section .post > img{
+  height: 200px;
+  width: 200px;
+  margin-right: 10px;
+  float: left;
+}
+#main section .post > #contents_area{
+  box-sizing: border-box;
+  padding: 10px;
+}
+#main section .post p{
+  margin-top: 10px;
+  height: 90px;
+  overflow: hidden;
+}
+#main section .post .continue{
+  margin-left: 50%;
+}
+#main section .post .time{
+  margin-top: 10px;
+}
+
+#main section .post_rss{
+  box-sizing: border-box;
+  width: 95%;
+  border: 1px solid #999;
+  margin-bottom: 30px;
+}
+#main section .post_single {
+  box-sizing: border-box;
+  width: 95%;
+}
+#main section .post_single h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #62b62f;
+}
+#main section .post_single p{
+  text-indent: 1em;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  line-height: 180%;
+}
+#main section .post_single ol{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#main section .post_single ul{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#main section .post_single ol > li{
+  list-style: decimal;
+}
+#main section .post_single ul > li{
+  list-style: disc;
+}
+#main section .post_single img{
+  width: 100%;
+  margin-top: 10px;
+}
+#main section .post_single .prevnext{
+  box-sizing: border-box;
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #62b62f;
+}
+#main section .post_single .prev{
+  float: left;
+  width: 50%;
+}
+#main section .post_single .next{
+  float: left;
+  width: 50%;
+}
+#main #twitter .tw_header{
+  margin-bottom: 10px;
+}
+#main #twitter .text{
+  margin-bottom: 10px;
+}
+#main #twitter .text a:visited{
+  color: #0033cc;
+}
+#main #twitter .tw_post{
+  box-sizing: border-box;
+  width: 95%;
+  border: 1px solid #999;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+} 
+
+#main #twitter .thumb{
+  float: left;
+  margin-right: 10px;
+}
+
+#main #about table{
+  box-sizing: border-box;
+  border-collapse:collapse;
+  width: 95%;
+  margin-top: 10px;
+}
+#main #about td{
+  border: 1px solid #999;
+  padding: 5px;
+}
+#main #about .headline{
+  box-sizing: border-box;
+  width: 25%; 
+}
+
+/* nav */
+#main nav{
+  float: left;
+  box-sizing: border-box;
+  width: 260px;
+}
+
+
+#main nav #side_menu > li{
+  width: 100%;
+  margin-bottom: 20px;
+}
+#main nav #side_bar > li > ul{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#main nav h3{
+  font-size: 16px;
+  border-bottom: 3px solid #62b62f;
+}
+
+/* footer */
+footer {
+  height: auto;
+  border-top: 3px solid #62b62f;
+  background-color: #62d62f;
+}
+footer #footer_in{
+  width: 960px;
+  margin: auto;
+}
+
+footer #footer_in ul{
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer #footer_in li{
+  margin-bottom: 10px;
+}
+footer #footer_in li:hover{
+  color: #fff;
+}
+
