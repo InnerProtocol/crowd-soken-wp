@@ -12,8 +12,20 @@
   <?php the_content(); ?>
   <div class="social"><?php if(function_exists("wp_social_bookmarking_light_output_e")) {wp_social_bookmarking_light_output_e();} ?></div>
   <div class="prevnext clearfix">
-    <div class="prev"><?php previous_post_link(); ?></div>
-    <div class="next"><?php next_post_link(); ?></div>
+    <div class="prev">
+      <?php if(get_previous_post()): ?>
+        <?php previous_post_link(); ?>
+      <?php else: ?>
+        最初の記事です
+      <?php endif; ?>
+    </div>
+    <div class="next">
+      <?php if(get_next_post()): ?>
+        <?php next_post_link(); ?>
+      <?php else: ?>
+        最新の記事です
+      <?php endif; ?>
+    </div>
   </div>
 </div>
 <?php

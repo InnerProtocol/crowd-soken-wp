@@ -124,11 +124,16 @@ header li:hover{
   margin-top: 10px;
 }
 
+#main section #feed{
+  margin-top: 20px;
+}
 #main section .post_rss{
   box-sizing: border-box;
   width: 95%;
-  border: 1px solid #999;
   margin-bottom: 30px;
+}
+#main section .post_rss{
+  font-size: 13px;
 }
 #main section .post_single {
   box-sizing: border-box;
@@ -168,16 +173,17 @@ header li:hover{
 #main section .post_single .prevnext{
   box-sizing: border-box;
   width: 100%; 
-  padding: 10px;
-  border: 1px solid #62b62f;
 }
 #main section .post_single .prev{
+  box-sizing: border-box;
   float: left;
   width: 50%;
 }
 #main section .post_single .next{
+  box-sizing: border-box;
   float: left;
   width: 50%;
+  text-align: right;
 }
 #main #twitter .tw_header{
   margin-bottom: 10px;

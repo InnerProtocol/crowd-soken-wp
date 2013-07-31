@@ -23,10 +23,13 @@ function initialize() {
     if(!result.error){
       for(var i=0; i< result.feed.entries.length; i++){
         var entry  = result.feed.entries[i];
+        var d      = new Date(entry.publishedDate);
         var div    = '<div class="post_rss">';
+        var blog   = '<div class="info">' + result.feed.title + '</div>';
+        var pubdate= '<div class="pubdate">' + d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDate() + '</div>';
         var title  = '<h3><a href="' + entry.link + '" target="_blank">' + entry.title + '</a></h3>';
         var enddiv = '</div>';
-        $('#feed').append(div + title + enddiv);
+        $('#feed').append(div + blog + pubdate  + title + enddiv);
       }
     }
   });
