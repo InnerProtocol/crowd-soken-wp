@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title><?php bloginfo('name'); ?><?php if ( is_single() ){ ?> » Blog Archive <?php } ?> <?php wp_title(); ?></title>
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 </head>
 <body>
 <header>
